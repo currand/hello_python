@@ -1,0 +1,10 @@
+test_dictionary = {}
+#test_dictionary = {'one' : 1, 'two' : 2}
+test_dictionary = {
+    'list' : [1,2,3],
+    'dict' : {'one' : 1, 'two' : 2},
+}
+
+for item in test_dictionary.keys():
+    if isinstance(test_dictionary[item], dict):
+        print "Dictionary values:", test_dictionary[item].items()
